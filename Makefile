@@ -18,3 +18,6 @@ build:
 debug:
 	mkdir -p ${CC_OUTPT_DIR}
 	${CC} ${CC_DEBUG_OPTS} ${INCLUDE} -o ${CC_OUTPT_DIR}/${CC_OUTPT_DEBUG} ${CC_FILES}
+
+clear:
+	rm -rf ${CC_OUTPT_DIR}
