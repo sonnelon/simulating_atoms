@@ -3,13 +3,17 @@
 #include "Physics.h"
 
 class Simulation {
+public:
+    Simulation(size_t count_atoms, size_t width, size_t height);
+    void start() const;
+    void render();
+    void display_atoms_cords() const;
 private:
-    long long count_atoms;
+    size_t count_atoms;
+    size_t width;
+    size_t height;
     std::vector<int> atoms_x;
     std::vector<int> atoms_y;
     Physics physics;
-public:
-    Simulation(long long count_atoms);
-    void start() const;
-    void render();
+    void spawn_atoms();
 };

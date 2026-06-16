@@ -1,7 +1,7 @@
 INC_DIRS = ./Include
 INCLUDE = $(addprefix -I, $(INC_DIRS))
 CC = g++
-CC_FILES = ./Main.cc
+CC_FILES = ./Main.cc ./Src/Physics.cc ./Src/Simulation.cc
 CC_OUTPT_DIR = ./Build
 CC_OUTPT = Atoms.production
 CC_BUILD_OPTS = -O3 -Wall -Wextra -Wpedantic 
